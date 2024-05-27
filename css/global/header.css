@@ -1,0 +1,325 @@
+header {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+header.responsive .container .menu > span {
+    width: 35px;
+    height: 3px;
+    background-color: var(--background);
+}
+
+header.responsive .container nav ul a::before {
+    background-color: var(--background) !important;
+}
+
+header.responsive .container nav ul,
+header.responsive a {
+    color: var(--background) !important;
+}
+
+header .container {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .container .logo a:hover {
+    cursor: pointer;
+}
+
+header .container .logo a h2 {
+    font-family: var(--fontOne);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+header .container nav {
+    display: flex;
+    gap: 80px;
+    font-family: var(--fontOne);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+header .container nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    color: var(--black);
+}
+
+header .container nav ul a {
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .container nav ul a:hover {
+    cursor: pointer;
+}
+
+header .container nav ul a.is-active {
+    color: var(--black);
+}
+
+header .container nav ul a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+header .container nav ul a.is-active::before,
+header .container nav ul a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+header .container .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .container .menu:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+header .container .menu > span {
+    width: 35px;
+    height: 3px;
+    background-color: var(--black);
+}
+
+#menu {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    height: 100%;
+    margin-top: -100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: end;
+}
+
+#menu.is-active {
+    opacity: 1;
+    z-index: 6;
+}
+
+#menu .box {
+    height: 100%;
+    min-height: 780px;
+    max-width: 768px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    clip-path: circle(0% at 100% 50%);
+    transition: clip-path 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu.is-active .box {
+    clip-path: circle(175% at 100% 50%);
+}
+
+#menu .box .information {
+    position: relative;
+    width: 100%;
+    padding: 0 2.6rem;
+    padding-top: 65px;
+    height: 100%;
+}
+
+#menu .box .information h2 {
+    font-family: var(--fontOne);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#menu .box .information .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu .box .information .head i {
+    font-size: 32px;
+    color: var(--background);
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu .box .information .head i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#menu .box .information nav {
+    font-family: var(--fontOne);
+    font-weight: 500;
+    font-size: 32px;
+}
+
+#menu .box .information nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 15px;
+    list-style: none;
+    color: var(--background);
+}
+
+#menu .box .information nav ul a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu .box .information nav ul a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--background);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+#menu .box .information nav ul a::after {
+    content: '\f061';
+    font-family: FontAwesome;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    font-size: 20px;
+    color: var(--background);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#menu .box .information nav ul a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#menu .box .information nav ul a:hover::after {
+    opacity: 1;
+}
+
+#menu .box .information .bottom {
+    position: absolute;
+    bottom: 0;
+    height: max-content;
+    width: calc(100% - 5.2rem);
+    margin-bottom: 65px;
+}
+
+#menu .box .information .bottom .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: 2px solid var(--background);
+    padding-bottom: 25px;
+}
+
+#menu .box .information .bottom .main .image {
+    position: relative;
+}
+
+#menu .box .information .bottom .main .image img:first-child {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+}
+
+#menu .box .information .bottom .main .image img:last-child {
+    margin-left: -100px;
+    margin-bottom: 35px;
+    width: 160px;
+    height: 100px;
+}
+
+#menu .box .information .bottom .main .socials {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+}
+
+#menu .box .information .bottom .main .socials a {
+    cursor: pointer;
+    color: var(--background);
+}
+
+#menu .box .information .bottom .copyright {
+    padding-top: 25px;
+    font-family: var(--fontOne);
+    font-size: 16px;
+    color: var(--background);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    header .container nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    #menu .box .information nav {
+        font-size: 22px;
+    }
+    #menu .box .information nav ul a::after {
+        bottom: 5px;
+        font-size: 16px;
+    }
+    #menu .box .information .bottom .main {
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+    }
+    #menu .box .information nav ul {
+        margin-top: 35px;
+    }
+    #menu .box {
+        min-height: 700px;
+    }
+    #menu .box .information .bottom .main .image img:first-child {
+        width: 160px;
+        height: 220px;
+    }
+    #menu .box .information .bottom .copyright {
+        font-size: 14px;
+    }
+}

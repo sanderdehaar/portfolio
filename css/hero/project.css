@@ -1,0 +1,147 @@
+#project {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#project a {
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+    font-family: var(--fontOne) !important;
+}
+
+#project .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+}
+
+#project .container .information_block h1 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+#project .container .information_block h2 {
+    font-size: 22px;
+    margin: 30px 0px;
+}
+
+#project .container .links {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontOne);
+    font-size: 16px;
+}
+
+#project .container .information_block p {
+    margin: 15px 0px;
+}
+
+#project .container .information_block a {
+    width: 100%;
+    color: var(--background);
+}
+
+#project .container .information_block .outcomes {
+    margin: 35px 0px;
+    display: flex;
+    gap: 15px;
+}
+
+#project .container .information_block .outcomes button {
+    padding: 10px;
+    border: 2px solid var(--background);
+    font-family: var(--fontOne);
+    font-size: 16px;
+    color: var(--background);
+    background-color: transparent;
+    transition: ease-in-out 0.2s;
+}
+
+#project .container .information_block .outcomes button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
+}
+
+#project .container .information_block .outcomes button.is-active {
+    border-bottom: 2px solid var(--background);
+}
+
+#project .container .information_block article {
+    display: none;
+}
+
+#project .container .information_block article.is-active {
+    display: block;
+}
+
+#project .container .information_block article .slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+#project .container .information_block article img {
+    width: max-content;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+
+#project .container .information_block article .slider .select {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: calc(100% - 5.2rem);
+    min-height: 500px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.6rem;
+}
+
+#project .container .information_block article .slider button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--background);
+    color: var(--white);
+    font-size: 18px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project .container .information_block article .slider button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    #project .container .information_block h1 {
+        font-size: 22px;
+    }
+    #project .container .information_block article p {
+        margin-bottom: 14px;
+    }
+    #project .container .information_block article .slider .select {
+        width: calc(100% - 2.6rem);
+        padding: 0 1.3rem;
+    }
+    #project .container .information_block article .slider button {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+}
