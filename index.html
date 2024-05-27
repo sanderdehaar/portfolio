@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Portfolio HTML Head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Stylesheets -->
+    <link href="css/global/global.css" rel="stylesheet" />
+    <link href="css/global/header.css" rel="stylesheet" />
+    <link href="css/hero/home.css" rel="stylesheet" />
+    <link href="css/hero/about.css" rel="stylesheet" />
+    <link href="css/hero/projects.css" rel="stylesheet" />
+    <link href="css/global/footer.css" rel="stylesheet" />
+    <!-- Extra links -->
+    <script src="https://kit.fontawesome.com/d4864e9a98.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/global/icon.ico">
+    <!-- Portfolio title -->
+    <title>Portfolio - Home</title>
+</head>
+
+<!-- All content -->
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Website logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <h2>Sander.</h2>
+                </a>
+            </div>
+            <!-- Header navigation -->
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#footer">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Menu -->
+    <div id="menu">
+        <div class="box">
+            <div class="information">
+                <div class="head">
+                    <h2>Menu</h2>
+                    <i class="fa-solid fa-xmark close-menu"></i>
+                </div>
+                <!-- Menu navigation -->
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="projects.html">
+                            <li>Projects</li>
+                        </a>
+                        <a href="#footer">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+                <div class="bottom">
+                    <div class="main">
+                        <div class="image">
+                            <img src="assets/img/hero/sander_picture.jfif" alt="Sabder" />
+                            <img src="assets/img/hero/handwrite_sander.png" alt="handwriting sander" />
+                        </div>
+                        <div class="socials">
+                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>© Sander de Haart - The Netherlands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content -->
+    <main>
+        <!-- Hero section home -->
+        <section id="home">
+            <div class="container">
+                <div class="left-container">
+                    <h1>Graphic designer<br>that loves creating.</h1>
+                    <p>My name is Sander and I am 19 years old.
+                        <br>I specialize in crafting designs and developing user-friendly websites.
+                    </p>
+                    <div class="buttons">
+                        <a href="projects.html"><button>View work</button></a>
+                        <a href="#footer"><button>Let's work together<i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="photo">
+                        <img src="assets/img/hero/sander_picture.jfif" alt="sander with motor helmet" />
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="line">
+                        <p>Portfolio 2024</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-overlay">
+                <h2>Design</h2>
+                <h2>Websites</h2>
+            </div>
+            <div class="circle-overlay">
+                <div class="circle-one"></div>
+                <div class="circle-two"></div>
+            </div>
+        </section>
+        <!-- Hero section about -->
+        <section id="about">
+            <div class="container">
+                <div class="image gsap-fade-in">
+                    <img src="assets/img/hero/sander_picture.jfif" alt="sander" />
+                </div>
+                <div class="information">
+                    <h2>About me</h2>
+                    <p>My name is Sander de Haart, and I am 19 years old. I hail from the Netherlands. I completed my higher vocational training (MBO) as a software developer, and presently, I am studying Media & Design at Fontys in Eindhoven.
+                    </p>
+                    <a href=""><button>Read more</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section projects -->
+        <section id="projects">
+            <div class="container">
+                <div class="information">
+                    <h2>Dive into my projects<br> & case studies.</h2>
+                    <div class="desc">
+                        <p>Here you can find my library of projects and knowledge that I have gathered in my years of being a developer.</p>
+                        <a href="projects.html"><button>See more<i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-container" id="featured-projects">
+                    <a href="introduction.html" class="project">
+                        <img src="assets/img/projects/introduction_project.png" />
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+                    <a href="branding.html" class="project">
+                        <img src="assets/img/projects/branding/square.png" />
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+                    <a href="media_campaign.html" class="project">
+                        <img src="assets/img/projects/media_campaign_project.png" />
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+                    <a href="portfolio.html" class="project">
+                        <img src="assets/img/projects/portfolio_project.png" />
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+                    <a href="#" class="project">
+                        <img src="assets/img/projects/development/explorebreda_background.png" />
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="information">
+                <div class="box">
+                    <h2 class="title">Sander.</h2>
+                    <p>My name is Sander and I am 19 years old. I specialize in crafting designs and developing user-friendly websites.</p>
+                </div>
+                <!-- Navigation -->
+                <div class="navigation">
+                    <div class="box">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Location</h2>
+                        <p>Melderslo</p>
+                        <p>Herenbosweg 41</p>
+                        <a href="tel:061234567">+06 12345678</a>
+                        <a href="mailto:jeffs@gmail.com">sanderdehaart@live.nl</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="copyright">
+                    <p>Copyright ©2024 - Sander de Haart</p>
+                </div>
+                <div class="socials">
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to top of website button -->
+    <a href="#home" id="back-to-top"><i class="fa-solid fa-caret-down"></i></a>
+    <!-- Javascript files -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/global/main.js"></script>
+    <script src="js/home.js"></script>
+    <!-- JS animations -->
+    <script>
+        srRevealAnimations();
+    </script>
+</body>
+
+</html>
